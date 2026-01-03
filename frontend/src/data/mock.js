@@ -418,6 +418,99 @@ export const techStack = {
   aiGovernance: ["Model Risk Management", "Responsible AI", "OWASP Top 10 LLM", "ML Audit Frameworks"]
 };
 
+export const awards = [
+  {
+    id: 1,
+    title: "Global Leader in Cybersecurity Excellence",
+    issuer: "Industry Recognition",
+    date: "July 2025",
+    category: "Leadership",
+    description: "Recognized for making a meaningful impact in cybersecurity with over 15 years of experience—particularly in Governance, Risk, and Compliance (GRC), cybersecurity by design, and mentoring. This recognition highlights contributions to advancing best practices, influencing others to adopt secure approaches, and actively volunteering to educate and raise awareness about cybersecurity importance.",
+    icon: "trophy"
+  },
+  {
+    id: 2,
+    title: "ISACA Scholarship Winner - 3rd Place",
+    issuer: "ISACA Detroit Chapter",
+    date: "May 2025",
+    category: "Academic Excellence",
+    description: "Won 3rd place in ISACA scholarship contest across all Michigan colleges. The competition theme was to hack a site and provide relevant security recommendations, demonstrating practical cybersecurity skills and advisory capabilities.",
+    icon: "award"
+  },
+  {
+    id: 3,
+    title: "Women in Technology - Community Awards Nominee",
+    issuer: "Technology Community",
+    date: "2024",
+    category: "Community Impact",
+    description: "Nominated for community awards in the field of cybersecurity and technology, recognizing contributions to advancing women in tech and cybersecurity education.",
+    icon: "users"
+  },
+  {
+    id: 4,
+    title: "Thanks A Zillion Award",
+    issuer: "Wipro Technologies Client",
+    date: "October 2014",
+    category: "Business Impact",
+    description: "Client appreciation for bringing a big revenue deal, demonstrating exceptional pre-sales and business development capabilities in enterprise technology solutions.",
+    icon: "trending-up"
+  },
+  {
+    id: 5,
+    title: "Mobile ECG Analysis System Innovation - 2nd Place",
+    issuer: "Innovation Competition",
+    date: "February 2014",
+    category: "Innovation",
+    description: "Awarded and Ranked 2nd for Mobile ECG Analysis System Innovation through IT for healthcare sector, showcasing expertise in healthcare technology and medical data security.",
+    icon: "heart-pulse"
+  },
+  {
+    id: 6,
+    title: "Speech Analytic System Innovation - 2nd Place",
+    issuer: "TechMahindra",
+    date: "October 2013",
+    category: "Innovation",
+    description: "Awarded and Ranked 2nd for Speech Analytic System Innovation through IT for banking sector, demonstrating innovation in financial services technology.",
+    icon: "mic"
+  },
+  {
+    id: 7,
+    title: "Innovator of the Month",
+    issuer: "TechMahindra",
+    date: "September 2013",
+    category: "Innovation",
+    description: "Recognized for two business proposals which generated new business for TechMahindra, demonstrating strategic thinking and business development excellence.",
+    icon: "lightbulb"
+  },
+  {
+    id: 8,
+    title: "Special Appreciation Award",
+    issuer: "TechMahindra",
+    date: "August 2012",
+    category: "Performance",
+    description: "Special recognition for exceptional contributions and performance in delivering enterprise technology solutions.",
+    icon: "star"
+  },
+  {
+    id: 9,
+    title: "Valuable Team Player Award",
+    issuer: "TechMahindra",
+    date: "June 2012",
+    category: "Team Excellence",
+    description: "Recognized as a valuable team player for consistent contributions to project success and team objectives.",
+    icon: "users"
+  },
+  {
+    id: 10,
+    title: "AT&T Client Recognition - Valuable Team Player",
+    issuer: "AT&T (TechMahindra Client)",
+    date: "October 2010",
+    category: "Client Excellence",
+    description: "Client recognition for contribution towards business goals and targets, demonstrating strong client relationship management and delivery excellence.",
+    icon: "handshake"
+  }
+];
+
 export const hiringManagerSummary = [
   {
     role: "CISO / VP Security",
