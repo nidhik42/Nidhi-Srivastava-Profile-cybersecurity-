@@ -4,6 +4,7 @@ import About from '../components/About';
 import CoreDomains from '../components/CoreDomains';
 import ProjectsShowcase from '../components/ProjectsShowcase';
 import ExperienceTimeline from '../components/ExperienceTimeline';
+import Awards from '../components/Awards';
 import ResearchSpeaking from '../components/ResearchSpeaking';
 import TechStack from '../components/TechStack';
 import HiringManagerSummary from '../components/HiringManagerSummary';
