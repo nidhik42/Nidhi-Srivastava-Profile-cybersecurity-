@@ -7,8 +7,13 @@ import { research } from '../data/mock';
 const ResearchSpeaking = () => {
   const iconMap = {
     'Speaking Engagement': Presentation,
+    'Conference Presentation': Presentation,
     'Research Publication': FileText
   };
+
+  // Group research by type
+  const publications = research.filter(r => r.type === 'Research Publication');
+  const presentations = research.filter(r => r.type === 'Conference Presentation' || r.type === 'Speaking Engagement');
 
   return (
     <div className="py-20 bg-white">
@@ -16,46 +21,94 @@ const ResearchSpeaking = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Research & Speaking</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Thought leadership in quantum security, AI/ML applications, and cybersecurity innovation
+            Thought leadership in AI/ML security, biometric authentication, quantum security, and cybersecurity education
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {research.map((item) => {
-            const Icon = iconMap[item.type];
-            return (
-              <Card key={item.id} className="border-slate-200 hover:shadow-xl transition-all duration-300 hover:border-blue-500/50">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="p-3 bg-blue-50 rounded-lg">
-                      {Icon && <Icon className="w-6 h-6 text-blue-600" />}
-                    </div>
-                    <Badge className="bg-blue-50 text-blue-700 border-blue-200">
-                      {item.type}
+        {/* Research Publications Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+            <FileText className="w-6 h-6 text-blue-600" />
+            Research Publications
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {publications.map((item) => {
+              const Icon = iconMap[item.type];
+              return (
+                <Card key={item.id} className="border-slate-200 hover:shadow-xl transition-all duration-300 hover:border-blue-500/50">
+                  <CardHeader>
+                    <Badge className="bg-blue-50 text-blue-700 border-blue-200 mb-3 w-fit">
+                      {item.venue}
                     </Badge>
-                  </div>
-                  <CardTitle className="text-xl text-slate-900 mb-2">{item.title}</CardTitle>
-                  <p className="text-sm font-semibold text-slate-600 mb-3">{item.venue}</p>
-                  <CardDescription className="text-slate-600 leading-relaxed">
-                    {item.description}
-                  </CardDescription>
-                </CardHeader>
-                
-                <CardContent>
-                  <div>
-                    <h4 className="font-semibold text-slate-900 text-xs mb-3 uppercase tracking-wide">Key Topics</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {item.topics.map((topic, idx) => (
-                        <Badge key={idx} variant="secondary" className="text-xs bg-slate-100 text-slate-700">
-                          {topic}
-                        </Badge>
-                      ))}
+                    <CardTitle className="text-lg text-slate-900 mb-2 leading-tight">{item.title}</CardTitle>
+                    <p className="text-sm font-semibold text-slate-600 mb-2">{item.date}</p>
+                    <CardDescription className="text-slate-600 leading-relaxed text-sm">
+                      {item.description}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 text-xs mb-2 uppercase tracking-wide">Key Topics</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {item.topics.map((topic, idx) => (
+                          <Badge key={idx} variant="secondary" className="text-xs bg-slate-100 text-slate-700">
+                            {topic}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Conference & Speaking Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+            <Presentation className="w-6 h-6 text-blue-600" />
+            Conference Presentations & Speaking Engagements
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {presentations.map((item) => {
+              const Icon = iconMap[item.type];
+              return (
+                <Card key={item.id} className="border-slate-200 hover:shadow-xl transition-all duration-300 hover:border-blue-500/50">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="p-3 bg-blue-50 rounded-lg">
+                        {Icon && <Icon className="w-6 h-6 text-blue-600" />}
+                      </div>
+                      <Badge className="bg-green-50 text-green-700 border-green-200">
+                        {item.type}
+                      </Badge>
+                    </div>
+                    <CardTitle className="text-xl text-slate-900 mb-2">{item.title}</CardTitle>
+                    <p className="text-sm font-semibold text-blue-600 mb-2">{item.venue}</p>
+                    <p className="text-sm text-slate-500 mb-3">{item.date}</p>
+                    <CardDescription className="text-slate-600 leading-relaxed">
+                      {item.description}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 text-xs mb-3 uppercase tracking-wide">Topics Covered</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {item.topics.map((topic, idx) => (
+                          <Badge key={idx} variant="secondary" className="text-xs bg-slate-100 text-slate-700">
+                            {topic}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
 
         {/* Certifications & Education Section */}
