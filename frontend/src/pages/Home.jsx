@@ -89,6 +89,7 @@ const Home = () => {
               <div className="flex flex-col gap-2">
                 <a href="#expertise" className="text-sm hover:text-white transition-colors">Core Expertise</a>
                 <a href="#projects" className="text-sm hover:text-white transition-colors">Featured Projects</a>
+                <a href="#awards" className="text-sm hover:text-white transition-colors">Awards & Recognition</a>
                 <a href="#research" className="text-sm hover:text-white transition-colors">Research & Speaking</a>
               </div>
             </div>
