@@ -55,6 +55,10 @@ const Home = () => {
           <ExperienceTimeline />
         </section>
         
+        <section id="awards">
+          <Awards />
+        </section>
+        
         <section id="research">
           <ResearchSpeaking />
         </section>
