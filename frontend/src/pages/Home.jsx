@@ -25,6 +25,7 @@ const Home = () => {
               <a href="#expertise" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Expertise</a>
               <a href="#projects" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Projects</a>
               <a href="#experience" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Experience</a>
+              <a href="#awards" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Awards</a>
               <a href="#research" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Research</a>
               <a href="#contact" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
             </div>
