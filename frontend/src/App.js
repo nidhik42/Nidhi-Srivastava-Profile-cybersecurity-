@@ -7,7 +7,7 @@ import { Toaster } from './components/ui/toaster';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/Nidhi-Srivastava-Profile-cybersecurity-">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
