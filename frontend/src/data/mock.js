@@ -7,7 +7,7 @@ export const profileData = {
   summary: "Global award-winning GRC leader with 18+ years driving enterprise security, compliance, and risk management for Fortune 500 clients. Proven track record delivering $60M+ in business impact through strategic governance, audit automation, and AI risk frameworks.",
   yearsExperience: "18+",
   location: "Global | USA",
-  email: "nidhi.srivastava@example.com",
+  email: "nidhiaransh@gmail.com",
   linkedin: "linkedin.com/in/nidhi-srivastava",
   github: "github.com/nidhi-srivastava"
 };
