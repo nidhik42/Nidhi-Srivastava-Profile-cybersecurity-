@@ -8,7 +8,7 @@ export const profileData = {
   yearsExperience: "18+",
   location: "Global | USA",
   email: "nidhiaransh@gmail.com",
-  linkedin: "linkedin.com/in/nidhi-srivastava",
+  linkedin: "linkedin.com/in/nidhi-srivastava-a5493468",
   github: "github.com/nidhi-srivastava"
 };
 
