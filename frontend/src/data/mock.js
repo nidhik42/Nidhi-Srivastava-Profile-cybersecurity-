@@ -299,19 +299,57 @@ export const experience = [
 export const research = [
   {
     id: 1,
-    type: "Speaking Engagement",
-    title: "Quantum Security and Medical Privacy Risks",
-    venue: "IEEE Iowa Conference",
-    description: "Led technical session on post-quantum threats and healthcare data protection strategies.",
-    topics: ["Quantum Security", "Medical Privacy", "Post-Quantum Cryptography", "Healthcare Security"]
+    type: "Research Publication",
+    title: "EEG Based Biometric Authentication for Critical Infrastructure Protection",
+    venue: "Scopus",
+    date: "October 2025",
+    description: "Novel biometric authentication approach using EEG signals for securing critical infrastructure systems, addressing the need for non-invasive, continuous authentication in high-security environments.",
+    topics: ["Biometric Authentication", "EEG Technology", "Critical Infrastructure", "Security Systems", "Neurosecurity"]
   },
   {
     id: 2,
     type: "Research Publication",
-    title: "AI in Network Security: DDoS Detection",
-    venue: "Scopus Peer-Reviewed Journal",
-    description: "Authored research on machine learning applications for distributed denial-of-service attack detection and mitigation.",
-    topics: ["AI/ML Security", "DDoS Detection", "Network Security", "Threat Detection"]
+    title: "Design and Evaluation of a Hybrid RPA-AI Framework for Intelligent Transcript Processing in Higher Education",
+    venue: "International Journal of Computational and Experimental Science and Engineering",
+    date: "September 2025",
+    description: "Proposed and tested a hybrid Robotic Process Automation (RPA) and Artificial Intelligence (AI) solution to automate and streamline transcript processing in higher education, addressing manual, labor-intensive processes.",
+    topics: ["RPA", "AI Automation", "Higher Education", "Process Automation", "Intelligent Systems"]
+  },
+  {
+    id: 3,
+    type: "Research Publication",
+    title: "AI in Network Security: Enhancing DDoS Attack Detection and Mitigation",
+    venue: "Scopus Q3 - Computer Fraud and Security",
+    date: "2024",
+    description: "Authored research on machine learning applications for distributed denial-of-service attack detection and mitigation, exploring AI-driven approaches to network security threats.",
+    topics: ["AI/ML Security", "DDoS Detection", "Network Security", "Threat Detection", "Cybersecurity"]
+  },
+  {
+    id: 4,
+    type: "Conference Presentation",
+    title: "Safeguarding The Future: AI-Driven Data Governance and Cybersecurity in K-12 Education",
+    venue: "9th World Conference on Teaching and Education - Berlin, Germany",
+    date: "December 19-21, 2025",
+    description: "Presented on AI-driven data governance frameworks and cybersecurity strategies specifically designed for K-12 educational environments, addressing the unique security challenges in educational technology.",
+    topics: ["AI Governance", "K-12 Security", "Data Governance", "Educational Technology", "Cybersecurity"]
+  },
+  {
+    id: 5,
+    type: "Conference Presentation",
+    title: "Child-Friendly Cybersecurity Education: Exploring Learning Methods, Engagement, and Future STEM Interest",
+    venue: "9th World Conference on Teaching and Education - Berlin, Germany",
+    date: "December 19-21, 2025",
+    description: "Led session on innovative approaches to teaching cybersecurity to children, exploring age-appropriate learning methods that enhance engagement and foster future STEM interest.",
+    topics: ["Cybersecurity Education", "STEM Education", "Child Learning", "Educational Methods", "Youth Engagement"]
+  },
+  {
+    id: 6,
+    type: "Speaking Engagement",
+    title: "Quantum Security and Medical Privacy Risks",
+    venue: "IEEE Iowa Conference",
+    date: "2024",
+    description: "Led technical session on post-quantum threats and healthcare data protection strategies, addressing emerging risks in medical data security.",
+    topics: ["Quantum Security", "Medical Privacy", "Post-Quantum Cryptography", "Healthcare Security"]
   }
 ];
 
